@@ -25,17 +25,16 @@ const Wrapper = styled.div`
 `;
 
 export const Controls = () => {
-    const [search, setSearch] = useState('');
     const [region, setRegion] = useState('');
 
     useEffect(() => {
         const regionValue = region?.value || '';
 
-    }, [search, region]);
+    }, [region]);
 
     return (
         <Wrapper>
-            <Search search={search} setSearch={setSearch} />
+            <Search />
             <CustomSelect
                 options={options}
                 placeholder="Filter by Region"

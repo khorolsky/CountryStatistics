@@ -97,8 +97,6 @@ const Tag = styled.span`
 `;
 
 
-
-
 export const Details = () => {
     const { name } = useParams();
 
